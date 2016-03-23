@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=0.10.0"
+  },
+"scripts" : {
+  "test" : "./.bin/gulp test",
+  "build" : "./.bin/cordova build android",
+  "postinstall": "./.bin/bower install && ./.bin/cordova prepare"
+  },
+"devDependencies": {
+    "cordova": "5.0.0",
+    "gulp": "^3.8.11",
+    "bower": "^1.5.3"
+  }
+}
